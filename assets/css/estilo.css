@@ -12,10 +12,12 @@
 /*header -------------------------------*/
 .header{
     
+    
 }
 .header__menuM{
-    background-color: #0E3B43;
+    background-color: rgba(14, 59, 67, 0.699);
     display: block;
+    height: 45px;
 }
 
 .header__menuD{
