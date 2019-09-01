@@ -21,12 +21,12 @@
             <!--menu-->
             <ul class="header__menuD">
                 <img src="" alt="logo">
-                <li><a href="#">What is?</a></li>
-                <li><a href="#">Example</a></li>
-                <li><a href="#">File Location</a></li>
-                <li><a href="#">File Formation</a></li>
-                <li><a href="#">Plugins</a></li>
-                <li><a href="#">Contributing</a></li>
+                <li><a href="#whatis">What is?</a></li>
+                <li><a href="#example">Example</a></li>
+                <li><a href="#filelocation">File Location</a></li>
+                <li><a href="#fileformation">File Formation</a></li>
+                <li><a href="#plugin">Plugins</a></li>
+                <li><a href="#contributing">Contributing</a></li>
             </ul>
 
             <div>
@@ -40,7 +40,7 @@
     <!--main---------------------------------------------->
 
     <main class="main container">
-        <section>
+        <section id="whatis">
 
             <h1>What is EditorConfig?</h1>
             <p>
@@ -48,23 +48,18 @@
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section class="container">
+        <section id="example" class="container">
             <h1>
                 Example File
             </h1>
-            <p>
+            <p class="main__texto">
                 Below is an example .editorconfig file setting end-of-line and indentation styles for Python and JavaScript files.
-            </p>
+            </p >
+            
             <table>
                 <tr>
                     <td>
-                        Example file
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <p>
+                        <p class="table__fosco">
                                 # EditorConfig is awesome: https://EditorConfig.org
 
                                 # top-most EditorConfig file
@@ -73,7 +68,7 @@
                         <p>
                             root = <span>true</span>
                         </p>
-                        <p>
+                        <p class="table__fosco">
                             # Unix-style newlines with a newline ending every file
                         </p>
                         <p>
@@ -81,7 +76,7 @@
                             end_of_line = lf
                             insert_final_newline = true
                         </p>
-                        <p>
+                        <p class="table__fosco">
                             # Matches multiple files with brace expansion notation
                             # Set default charset
                         </p>
@@ -89,7 +84,7 @@
                             [*.{js,py}]
                             charset = utf-8
                        </p>
-                       <p>
+                       <p class="table__fosco">
                             # 4 space indentation
                        </p>
                        <p>
@@ -97,14 +92,14 @@
                             indent_style = space
                             indent_size = 4
                        </p>
-                        <p>
+                        <p class="table__fosco">
                             # Tab indentation (no size specified)
                         </p>
                         <p>
                             [Makefile]
                             indent_style = tab
                         </p>
-                        <p>
+                        <p class="table__fosco">
                             # Indentation override for all JS under lib directory
                         </p>
                         <p>
@@ -112,7 +107,7 @@
                             indent_style = space
                             indent_size = 2
                         </p>
-                        <p>
+                        <p class="table__fosco">
                             # Matches the exact files either package.json or .travis.yml
                         </p>
                         <p>
@@ -123,36 +118,36 @@
                     </td>
                 </tr>
             </table>
-            <p>
+            <p class="main__texto">
                 Check the Wiki for some real-world examples of <a href="#">projects using EditorConfig files</a>.
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section class="container">
+        <section id="filelocation" class="container">
             <h1>Where are these files stored?</h1>
-        </section>
+        
 <!------------------------------------------------------------------------------------>
-        <section class="container">
-            <p>
+        
+            <p class="main__texto">
                 When opening a file, EditorConfig plugins look for a file named .editorconfig in the directory of the opened file and in every parent directory. A search for .editorconfig files will stop if the root filepath is reached or an EditorConfig file with root=true is found.
             </p>
-            <p>
+            <p class="main__texto">
                 EditorConfig files are read top to bottom and the most recent rules found take precedence. Properties from matching EditorConfig sections are applied in the order they were read, so properties in closer files take precedence.
             </p>
-            <p>
-                <p class="main__negrito">For Windows Users:</p> To create an .editorconfig file within Windows Explorer, you need to create a file named .editorconfig., which Windows Explorer will automatically rename to .editorconfig.
+            <p class="main__texto">
+                <b>For Windows Users:</b>b To create an .editorconfig file within Windows Explorer, you need to create a file named .editorconfig., which Windows Explorer will automatically rename to .editorconfig.
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section class="container">
+        <section id="fileformation" class="container">
             <h1>File Format Details</h1>
-            <p>
+            <p class="main__texto">
                 EditorConfig files use an INI format that is compatible with the format used by <a href="#">Python ConfigParser Library</a>, but [ and ] are allowed in the section names. The section names are filepath <a href="#">globs</a> (case sensitive), similar to the format accepted by <a href="#">gitignore</a>. Only forward slashes (/, not backslashes) are used as path separators and octothorpes (#) or semicolons (;) are used for comments. Comments should go on their own lines. EditorConfig files should be UTF-8 encoded, with either CRLF or LF line separators. EditorConfig files are read top to bottom and the most recent rules found take precedence.
             </p>
-            <p>Filepath glob patterns and currently-supported EditorConfig properties are explained below.</p>
-            <h2>Wildcard Patterns</h2>
-            <p>Special characters recognized in section names for wildcard matching:</p>
-            <table>
+            <p class="main__texto">Filepath glob patterns and currently-supported EditorConfig properties are explained below.</p>
+            <h2 class="main__ligth">Wildcard Patterns</h2>
+            <p class="main__texto">Special characters recognized in section names for wildcard matching:</p>
+            <table >
                 <tr>
                     <td>*</td>
                     <td>Matches any string of characters, except path separators (/)</td>
@@ -183,49 +178,49 @@
                 </tr>
             </table>
 
-            <p>Special characters can be escaped with a backslash so they won't be interpreted as wildcard patterns.</p>
+            <p class="main__texto">Special characters can be escaped with a backslash so they won't be interpreted as wildcard patterns.</p>
             <h2 class="main__ligth">Supported Properties</h2>
-            <p>Note that not all properties are supported by every plugin. The wiki has a <a href="#">complete list of properties</a>.</p>
+            <p class="main__texto">Note that not all properties are supported by every plugin. The wiki has a <a href="#">complete list of properties</a>.</p>
 
 
             <table>
                 <tr>
-                    <td><p>indent_style:</p> set to "tab" or "space" to use hard tabs or soft tabs respectively.</td>
+                    <td><b>indent_style:</b> set to "tab" or "space" to use hard tabs or soft tabs respectively.</td>
                 </tr>
                 <tr>
-                    <td><p>indent_size:</p> a whole number defining the number of columns used for each indentation level and the width of soft tabs (when supported). When set to "tab", the value of <p>tab_width</p> (if specified) will be used.</td>
+                    <td><b>indent_size:</b> a whole number defining the number of columns used for each indentation level and the width of soft tabs (when supported). When set to "tab", the value of <b>tab_width</b> (if specified) will be used.</td>
                 </tr>
                 <tr>
-                    <td><p>tab_width:</p> a whole number defining the number of columns used to represent a tab character. This defaults to the value of <p>indent_size</p> and doesn't usually need to be specified.</td>
+                    <td><b>tab_width:</b> a whole number defining the number of columns used to represent a tab character. This defaults to the value of <b>indent_size</b> and doesn't usually need to be specified.</td>
                 </tr>
                 <tr>
-                    <td><p>end_of_line:</p> set to "lf", "cr", or "crlf" to control how line breaks are represented.</td>
+                    <td><b>end_of_line:</b> set to "lf", "cr", or "crlf" to control how line breaks are represented.</td>
                 </tr>
                 <tr>
-                    <td><p>charset:</p> set to "latin1", "utf-8", "utf-8-bom", "utf-16be" or "utf-16le" to control the character set.</td>
+                    <td><b>charset:</b> set to "latin1", "utf-8", "utf-8-bom", "utf-16be" or "utf-16le" to control the character set.</td>
                 </tr>
                 <tr>
-                    <td><p>trim_trailing_whitespace:</p> set to "true" to remove any whitespace characters preceding newline characters and "false" to ensure it doesn't.</td>
+                    <td><b>trim_trailing_whitespace:</b> set to "true" to remove any whitespace characters preceding newline characters and "false" to ensure it doesn't.</td>
                 </tr>
                 <tr>
                     <td>
-                        <p>insert_final_newline:</p> set to "true" to ensure file ends with a newline when saving and "false" to ensure it doesn't.</td>
+                        <b>insert_final_newline:</b> set to "true" to ensure file ends with a newline when saving and "false" to ensure it doesn't.</td>
                 </tr>
                 <tr>
-                    <td><p>root:</p> special property that should be specified at the top of the file outside of any sections. Set to "true" to stop .editorconfig files search on current file.</td>
+                    <td><b>root:</b> special property that should be specified at the top of the file outside of any sections. Set to "true" to stop .editorconfig files search on current file.</td>
                 </tr>
             </table>
 
-            <p>
-                Currently all properties and values are case-insensitive. They are lowercased when parsed. Generally, if a property is not specified, the editor settings will be used, i.e. EditorConfig takes no effect on that part. For any property, a value of "unset" is to remove the effect of that property, even if it has been set before. For example, add indent_size = unset to undefine <p>indent_size</p> property (and use editor default).
+            <p class="main__texto">
+                Currently all properties and values are case-insensitive. They are lowercased when parsed. Generally, if a property is not specified, the editor settings will be used, i.e. EditorConfig takes no effect on that part. For any property, a value of "unset" is to remove the effect of that property, even if it has been set before. For example, add indent_size = unset to undefine <b>indent_size</b> property (and use editor default).
             </p>
 
-            <p>
-                It is acceptable and often preferred to leave certain EditorConfig properties unspecified. For example, <p>tab_width</p> need not be specified unless it differs from the value of <p>indent_size</p>. Also, when <p>indent_style</p> is set to "tab", it may be desirable to leave <p>indent_size</p> unspecified so readers may view the file using their preferred indentation width. Additionally, if a property is not standardized in your project (<p>end_of_line</p> for example), it may be best to leave it blank.
+            <p class="main__texto">
+                It is acceptable and often preferred to leave certain EditorConfig properties unspecified. For example, <b>tab_width</b> need not be specified unless it differs from the value of <b>indent_size</b>. Also, when <b>indent_style</b> is set to "tab", it may be desirable to leave <b>indent_size</b> unspecified so readers may view the file using their preferred indentation width. Additionally, if a property is not standardized in your project (<p>end_of_line</p> for example), it may be best to leave it blank.
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section class="container">
+        <section id = "plugin"class="container">
             <h1>No Plugin Necessary</h1>
             <p>These editors come bundled with native support for EditorConfig. Everything should just work.</p>
             <div class="logos">
@@ -298,25 +293,25 @@
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section class="container">
+        <section id="contributing" class="container">
             <h1>Contributing to EditorConfig</h1>
             <h2>Give us your feedback</h2>
 
-            <p>
+            <p class="main__texto">
                 This project is greatly in need of feedback from other developers. We want to hear ideas about how to make this project better. Please use the <a href="#">mailing list</a> to send an email to the EditorConfig team (subscribe by shooting an email to <a href="#">editorconfig+subscribe@googlegroups.com</a>) and use the <a href="#">issue tracker</a> to submit bugs (but please take a look at the <a href="#">FAQ</a> first). Also feel free to <a href="#">tweet at us</a>.
             </p>
 
             <h2>Create a plugin</h2>
 
-            <p>
+            <p class="main__texto">
                 EditorConfig plugins can be developed by using one of the EditorConfig core libraries. The EditorConfig core libraries accept as input the file being edited, find and parse relevant .editorconfig files, and pass back the properties that should be used. Please ignore any unrecognized properties and property values in your editor plugin for future compatibility, since new properties and permitted values will be added in the future. Currently there is a <a href="#">C library</a>, a <a href="#">Python library</a>, a <a href="#">JavaScript library</a>, two <a href="#">Java libraries</a> (<a href="#">EditorConfig Core Java Library</a> and <a href="#">ec4j</a>), a <a href="#">Lua library</a>, a <a href="#">.NET library</a>, and a <a href="#">Ruby library</a>.
             </p>
 
-            <p>
+            <p class="main__texto">
                 If you are planning on creating a new plugin, use the <a href="#">mailing list</a> to let us know so we can help out and link to your plugin once it's created. If you plan on using one of the EditorConfig cores as a library or command line interface, the <a href="#">C library documentation</a>, <a href="#">Python library documentation</a> or <a href="#">Java library documentation</a> may be helpful.
             </p>
 
-            <p>
+            <p class="main__texto">
                 More details can be found on the <a href="#">Plugin-How-To wiki page</a>.
             </p>
 
@@ -377,7 +372,7 @@
             <img src="assets/images/logos/github.png" alt="Logo GitHub">
             <img src="assets/images/logos/twitter_circulo.png" alt="Logo Twitter">
         </div>
-        <p>
+        <p class="main__texto">
                 The EditorConfig website is licensed under a <a href="#">Creative Commons Attribution 3.0 Unported License</a>. 
         </p>
 
