@@ -13,8 +13,10 @@
     <header class="header ">
         <div>
             <div class="header__menuM">
-                <img src="assets/images/índice.svg" alt="hamburguer">
-                <img  src="assets/images/logo.png" alt="logo">
+
+                <img src="assets/images/hamburguer.svg" alt="hamburguer">
+                <img src="assets/images/logos/logo_maior.png" alt="logo">
+
             </div>
             <!--menu-->
             <ul class="header__menuD">
@@ -28,21 +30,25 @@
             </ul>
 
             <div>
-                <h1 class="header__titulo">EditorConfig</h1>
-                <img src="" alt="seta para baixo">
+
+                <h1>EditorConfig</h1>
+                <img src="assets/images/seta_baixo.png" alt="seta para baixo">
+
             </div>
         </div>
     </header>
     <!--main---------------------------------------------->
+
     <main class="main container">
         <section>
+
             <h1>What is EditorConfig?</h1>
             <p>
                 EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles. EditorConfig files are easily readable and they work nicely with version control systems.
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <h1>
                 Example File
             </h1>
@@ -122,11 +128,11 @@
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <h1>Where are these files stored?</h1>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <p>
                 When opening a file, EditorConfig plugins look for a file named .editorconfig in the directory of the opened file and in every parent directory. A search for .editorconfig files will stop if the root filepath is reached or an EditorConfig file with root=true is found.
             </p>
@@ -138,7 +144,7 @@
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <h1>File Format Details</h1>
             <p>
                 EditorConfig files use an INI format that is compatible with the format used by <a href="#">Python ConfigParser Library</a>, but [ and ] are allowed in the section names. The section names are filepath <a href="#">globs</a> (case sensitive), similar to the format accepted by <a href="#">gitignore</a>. Only forward slashes (/, not backslashes) are used as path separators and octothorpes (#) or semicolons (;) are used for comments. Comments should go on their own lines. EditorConfig files should be UTF-8 encoded, with either CRLF or LF line separators. EditorConfig files are read top to bottom and the most recent rules found take precedence.
@@ -219,80 +225,80 @@
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
-            <h1>No Pluglin Nescessary</h1>
+        <section class="container">
+            <h1>No Plugin Necessary</h1>
             <p>These editors come bundled with native support for EditorConfig. Everything should just work.</p>
-            <div>
-                <img src="" alt="BBEdit">
-                <img src="" alt="CodeCrusader">
-                <img src="" alt="CodeLite">
-                <img src="" alt="ElementaryCode">
+            <div class="logos">
+                <img src="assets/images/logos/no-plugin/bbedit.png" alt="BBEdit">
+                <img src="assets/images/logos/no-plugin/code-crusader.png" alt="CodeCrusader">
+                <img src="assets/images/logos/no-plugin/codelite.png" alt="CodeLite">
+                <img src="assets/images/logos/no-plugin/elementary-code.png" alt="ElementaryCode">
 
-                <img src="" alt="Builder">
-                <img src="" alt="GitHub">
-                <img src="" alt="GitBucket">
-                <img src="" alt="Gogs">
+                <img src="assets/images/logos/no-plugin/builder.png" alt="Builder">
+                <img src="assets/images/logos/no-plugin/github.png" alt="GitHub">
+                <img src="assets/images/logos/no-plugin/gitbucket.png" alt="GitBucket">
+                <img src="assets/images/logos/no-plugin/gogs.png" alt="Gogs">
 
-                <img src="" alt="InteliJIDEA">
-                <img src="" alt="KTextEditor">
-                <img src="" alt="komodo">
-                <img src="" alt="Kakoune">
+                <img src="assets/images/logos/no-plugin/intellijIDEA.png" alt="IntellijIDEA">
+                <img src="assets/images/logos/no-plugin/ktexteditor.png" alt="KTextEditor">
+                <img src="assets/images/logos/no-plugin/komodo.png" alt="komodo">
+                <img src="assets/images/logos/no-plugin/kakoune.png" alt="Kakoune">
 
-                <img src="" alt="VisualStudio/ManaDevelop">
-                <img src="" alt="PyCharm">
-                <img src="" alt="ReSharper">
-                <img src="" alt="Rider">
+                <img src="assets/images/logos/no-plugin/monodevelop.png" alt="VisualStudio/MonoDevelop">
+                <img src="assets/images/logos/no-plugin/pyCharm.png" alt="PyCharm">
+                <img src="assets/images/logos/no-plugin/reSharper.png" alt="ReSharper">
+                <img src="assets/images/logos/no-plugin/rider.png" alt="Rider">
 
-                <img src="" alt="RubyMine">
-                <img src="" alt="SourceHut">
-                <img src="" alt="SourceLair">
-                <img src="" alt="TartoiseGit">
+                <img src="assets/images/logos/no-plugin/rubyMine.png" alt="RubyMine">
+                <img src="assets/images/logos/no-plugin/sourcehut.png" alt="SourceHut">
+                <img src="assets/images/logos/no-plugin/sourcelair.png" alt="SourceLair">
+                <img src="assets/images/logos/no-plugin/TortoiseGit.png" alt="TortoiseGit">
 
-                <img src="" alt="VisualStudio">
-                <img src="" alt="WebStorm">
-                <img src="" alt="WarkingCopy">
+                <img src="assets/images/logos/no-plugin/visualstudio-pro.png" alt="VisualStudio">
+                <img src="assets/images/logos/no-plugin/webStorm.png" alt="WebStorm">
+                <img src="assets/images/logos/no-plugin/working-copy.png" alt="WorkingCopy">
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <h1>Download a Plugin</h1>
             <h2>Editor</h2>
 
-            <div>
-                <img src="" alt="AppCode">
-                <img src="" alt="Atom">
-                <img src="" alt="Brackets">
-                <img src="" alt="CLion">
-                <img src="" alt="Coda">
-                <img src="" alt="Code::Blocks">
-                <img src="" alt="Eclipse">
-                <img src="" alt="Emacs">
-                <img src="" alt="Geany">
-                <img src="" alt="GEdit">
-                <img src="" alt="JEdit">
-                <img src="" alt="Lazarus">
-                <img src="" alt="Micro">
-                <img src="" alt="NetBeans">
-                <img src="" alt="Notpad++">
-                <img src="" alt="PheStorm">
-                <img src="" alt="SublimeText">
-                <img src="" alt="textaDept">
-                <img src="" alt="TextMate">
-                <img src="" alt="Vim">
-                <img src="" alt="VisualStudioCode">
+            <div class="logos">
+                <img src="assets/images/logos/download-plugin/appCode.png" alt="AppCode">
+                <img src="assets/images/logos/download-plugin/atom.png" alt="Atom">
+                <img src="assets/images/logos/download-plugin/brackets.png" alt="Brackets">
+                <img src="assets/images/logos/download-plugin/clion.png" alt="CLion">
+                <img src="assets/images/logos/download-plugin/coda.png" alt="Coda">
+                <img src="assets/images/logos/download-plugin/codeblocks.png" alt="Code::Blocks">
+                <img src="assets/images/logos/download-plugin/eclipse.png" alt="Eclipse">
+                <img src="assets/images/logos/download-plugin/emacs.png" alt="Emacs">
+                <img src="assets/images/logos/download-plugin/geany.png" alt="Geany">
+                <img src="assets/images/logos/download-plugin/gedit.png" alt="GEdit">
+                <img src="assets/images/logos/download-plugin/jedit.png" alt="JEdit">
+                <img src="assets/images/logos/download-plugin/lazarus.png" alt="Lazarus">
+                <img src="assets/images/logos/download-plugin/micro.png" alt="Micro">
+                <img src="assets/images/logos/download-plugin/NetBeans.png" alt="NetBeans">
+                <img src="assets/images/logos/download-plugin/notepad.png" alt="Notepad++">
+                <img src="assets/images/logos/download-plugin/phpStorm.png" alt="PhpStorm">
+                <img src="assets/images/logos/download-plugin/sublimetext.png" alt="SublimeText">
+                <img src="assets/images/logos/download-plugin/textadept.png" alt="textAdept">
+                <img src="assets/images/logos/download-plugin/textmate.png" alt="TextMate">
+                <img src="assets/images/logos/download-plugin/vim.png" alt="Vim">
+                <img src="assets/images/logos/download-plugin/visualstudio-code.png" alt="VisualStudioCode">
             </div>
 
             <h2>Headless Tool</h2>
             <p>To use EditorConfig with one of these headless tools, you will need to install a plugin.</p>
 
             <div>
-                <img src="" alt="ApacheAnt">
-                <img src="" alt="Gradle">
-                <img src="" alt="maven">
+                <img src="assets/images/logos/headless-tool/apache-ant.png" alt="ApacheAnt">
+                <img src="assets/images/logos/headless-tool/gradle.png" alt="Gradle">
+                <img src="assets/images/logos/headless-tool/maven.png" alt="maven">
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <h1>Contributing to EditorConfig</h1>
             <h2>Give us your feedback</h2>
 
@@ -353,14 +359,14 @@
             <p>EditorConfig logos drawn by <a href="#">Kat On</a> and <a href="#">Amon Keishima</a>. Website by <a href="#">Trey Hunner</a> and <a href="#">Hong Xu</a>. Please attribute appropriately. </p>
         </section>
 <!------------------------------------------------------------------------------------>
-        <section>
+        <section class="container">
             <div>
                 <h1>Project Page on GitHub</h1>
-                <img src="" alt="Logo">
+                <img src="assets/images/logos/fork-editorconfig.png" alt="Logo">
             </div>
             <div>
                 <h1>Follow Us on Twitter</h1>
-                <img src="" alt="Twitter">
+                <img src="assets/images/logos/tweet-editorconfig.png" alt="Twitter">
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
@@ -368,8 +374,8 @@
     <!--footer-------------------------------------------->
     <footer>
         <div>
-            <img src="" alt="Logo GitHub">
-            <img src="" alt="Logo Twitter">
+            <img src="assets/images/logos/github.png" alt="Logo GitHub">
+            <img src="assets/images/logos/twitter_circulo.png" alt="Logo Twitter">
         </div>
         <p>
                 The EditorConfig website is licensed under a <a href="#">Creative Commons Attribution 3.0 Unported License</a>. 

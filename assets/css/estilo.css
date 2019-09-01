@@ -55,6 +55,14 @@
 
 }
 
+.logos img{
+    width: 20%;
+    height: 20%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 .header__titulo{
     font-size: 27px;
     color: #FFFFFF;
@@ -84,3 +92,4 @@
     font-weight: lighter;
     font-size: 20px;
 }
+
