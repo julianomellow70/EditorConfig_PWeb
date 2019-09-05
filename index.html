@@ -330,82 +330,76 @@
 <!------------------------------------------------------------------------------------>
         <section id="contributing" class="container">
             <h1>Contributing to EditorConfig</h1>
-            <h2>Give us your feedback</h2>
 
+            <h2>Give us your feedback</h2>
             <p class="main__texto">
-                This project is greatly in need of feedback from other developers. We want to hear ideas about how to make this project better. Please use the <a href="#">mailing list</a> to send an email to the EditorConfig team (subscribe by shooting an email to <a href="#">editorconfig+subscribe@googlegroups.com</a>) and use the <a href="#">issue tracker</a> to submit bugs (but please take a look at the <a href="#">FAQ</a> first). Also feel free to <a href="#">tweet at us</a>.
+                This project is greatly in need of feedback from other developers. We want to hear ideas about how to make this project better. Please use the <a href="http://groups.google.com/group/editorconfig">mailing list</a> to send an email to the EditorConfig team (subscribe by shooting an email to <a href="editorconfig+subscribe@googlegroups.com">editorconfig+subscribe@googlegroups.com</a>) and use the <a href="https://github.com/editorconfig/editorconfig/issues">issue tracker</a> to submit bugs (but please take a look at the <a href="https://github.com/editorconfig/editorconfig/wiki/FAQ">FAQ</a> first). Also feel free to <a href="https://twitter.com/#!/EditorConfig">tweet at us</a>.
             </p>
 
             <h2>Create a plugin</h2>
-
             <p class="main__texto">
-                EditorConfig plugins can be developed by using one of the EditorConfig core libraries. The EditorConfig core libraries accept as input the file being edited, find and parse relevant .editorconfig files, and pass back the properties that should be used. Please ignore any unrecognized properties and property values in your editor plugin for future compatibility, since new properties and permitted values will be added in the future. Currently there is a <a href="#">C library</a>, a <a href="#">Python library</a>, a <a href="#">JavaScript library</a>, two <a href="#">Java libraries</a> (<a href="#">EditorConfig Core Java Library</a> and <a href="#">ec4j</a>), a <a href="#">Lua library</a>, a <a href="#">.NET library</a>, and a <a href="#">Ruby library</a>.
+                EditorConfig plugins can be developed by using one of the EditorConfig core libraries. The EditorConfig core libraries accept as input the file being edited, find and parse relevant .editorconfig files, and pass back the properties that should be used. Please ignore any unrecognized properties and property values in your editor plugin for future compatibility, since new properties and permitted values will be added in the future. Currently there is a <a href="https://github.com/editorconfig/editorconfig-core-c#readme">C library</a>, a <a href="https://github.com/editorconfig/editorconfig-core-py#readme">Python library</a>, a <a href="https://github.com/editorconfig/editorconfig-core-js#readme">JavaScript library</a>, two Java libraries (<a href="https://github.com/editorconfig/editorconfig-core-java#readme">EditorConfig Core Java Library</a> and <a href="https://github.com/ec4j/ec4j#readme">ec4j</a>), a <a href="https://github.com/editorconfig/editorconfig-core-lua#readme">Lua library</a>, a <a href="https://github.com/editorconfig/editorconfig-core-net#readme">.NET library</a>, and a <a href="https://github.com/editorconfig/editorconfig-core-ruby">Ruby library</a>.
             </p>
-
             <p class="main__texto">
-                If you are planning on creating a new plugin, use the <a href="#">mailing list</a> to let us know so we can help out and link to your plugin once it's created. If you plan on using one of the EditorConfig cores as a library or command line interface, the <a href="#">C library documentation</a>, <a href="#">Python library documentation</a> or <a href="#">Java library documentation</a> may be helpful.
+                If you are planning on creating a new plugin, use the <a href="https://groups.google.com/group/editorconfig">mailing list</a> to let us know so we can help out and link to your plugin once it's created. If you plan on using one of the EditorConfig cores as a library or command line interface, the <a href="http://docs.editorconfig.org/">C library documentation</a>, <a href="http://pydocs.editorconfig.org/">Python library documentation</a> or <a href="http://javadocs.editorconfig.org/">Java library documentation</a> may be helpful.
             </p>
-
             <p class="main__texto">
-                More details can be found on the <a href="#">Plugin-How-To wiki page</a>.
+                More details can be found on the <a href="https://github.com/editorconfig/editorconfig/wiki/Plugin-How-To">Plugin-How-To wiki page</a>.
             </p>
 
             <h2>Main Contributors</h2>
 
             <h3>Core libraries:</h3>
-
             <div class="lista">
                <ul>
-                <li>EditorConfig C Core: <a href="#">Hong Xu</a> and <a href="#">Trey Hunner</a></li>
-                <li>EditorConfig Java Core: <a href="#">Dennis Ushakov</a></li>
-                <li>ec4j: <a href="#">Peter Palaga</a> and <a href="#">Angelo Zerr</a></li>
-                <li>EditorConfig Javascript Core: <a href="#">Trey Hunner</a> and <a href="#">Jed Mao</a></li>
-                <li>EditorConfig Python Core: <a href="#">Trey Hunner</a></li>
-                <li>EditorConfig .NET Core: <a href="#">Martijn Laarman</a></li>
-                <li>EditorConfig Ruby Core: <a href="#">Joshua Peek</a> and <a href="#">Brian Lopez</a></li>
+                <li>EditorConfig C Core: <a href="http://www.topbug.net/">Hong Xu</a> and <a href="http://treyhunner.com/">Trey Hunner</a></li>
+                <li>EditorConfig Java Core: <a href="https://github.com/denofevil">Dennis Ushakov</a></li>
+                <li>ec4j: <a href="https://github.com/ppalaga">Peter Palaga</a> and <a href="https://angelozerr.wordpress.com/about">Angelo Zerr</a></li>
+                <li>EditorConfig Javascript Core: <a href="http://treyhunner.com/">Trey Hunner</a> and <a href="http://github.com/jedmao">Jed Mao</a></li>
+                <li>EditorConfig Python Core: <a href="http://treyhunner.com/">Trey Hunner</a></li>
+                <li>EditorConfig .NET Core: <a href="http://localghost.io/">Martijn Laarman</a></li>
+                <li>EditorConfig Ruby Core: <a href="https://github.com/josh">Joshua Peek</a> and <a href="https://github.com/brianmario">Brian Lopez</a></li>
             </ul> 
             </div>
             
-
             <h3>Editor Plugins:</h3>
-
             <div class="lista">
                 <ul>
-                    <li>Atom plugin: <a href="#">Sindre Sorhus</a></li>
-                    <li>Brackets plugin: <a href="#">Chen-Heng Chang</a></li>
-                    <li>Code::Blocks plugin: <a href="#">Hong Xu</a></li>
-                    <li>Emacs plugin: <a href="#">Trey Hunner</a>, <a href="#">Johan Sundström</a>, <a href="#">10sr</a></li>
-                    <li>Geany plugin: <a href="#">Hong Xu</a></li>
-                    <li>Gedit plugin: <a href="#">Trey Hunner</a></li>
-                    <li>GitHub Browser extension: <a href="#">Ingvar Stepanyan</a></li>
-                    <li>JetBrain plugin: <a href="#">Kevin Bell</a>, <a href="#">Dennis Ushakov</a></li>
-                    <li>jEdit plugin: <a href="#">Hong Xu</a></li>
-                    <li>Micro plugin: <a href="#">10sr</a></li>
-                    <li>NetBeans plugin: <a href="#">Benny Neugebauer</a>, <a href="#">Michael Koppen</a>, <a href="#">Junichi Yamamoto</a></li>
-                    <li>Notepad++ plugin: <a href="#">Hong Xu</a></li>
-                    <li>Sublime Text plugin: <a href="#">Sindre Sorhus</a></li>
-                    <li>TextMate plugin: <a href="#">Rob Brackett</a></li>
-                    <li>Vim plugin: <a href="#">Hong Xu</a>, <a href="#">Trey Hunner</a></li>
-                    <li>Visual Studio plugin: <a href="#">William Swanson</a>, <a href="#">nulltoken</a>, <a href="#">Martijn Laarman</a>, <a href="#">Arkadiy Shapkin</a>, <a href="#">Jed Mao</a></li>
-                    <li>Visual Studio Code extension: <a href="#">Jed Mao</a>, <a href="#">Chris Dias</a></li>
-                    <li>Xcode plugin: <a href="#">Marco Sero</a></li>
+                    <li>Atom plugin: <a href="http://sindresorhus.com/">Sindre Sorhus</a></li>
+                    <li>Brackets plugin: <a href="http://kidwm.net/">Chen-Heng Chang</a></li>
+                    <li>Code::Blocks plugin: <a href="http://www.topbug.net/">Hong Xu</a></li>
+                    <li>Emacs plugin: <a href="http://treyhunner.com/">Trey Hunner</a>, <a href="http://ecmanaut.blogspot.com/">Johan Sundström</a>, <a href="https://github.com/10sr">10sr</a></li>
+                    <li>Geany plugin: <a href="http://www.topbug.net/">Hong Xu</a></li>
+                    <li>Gedit plugin: <a href="http://treyhunner.com/">Trey Hunner</a></li>
+                    <li>GitHub Browser extension: <a href="http://rreverser.com/">Ingvar Stepanyan</a></li>
+                    <li>JetBrain plugin: <a href="https://github.com/bellkev/">Kevin Bell</a>, <a href="https://github.com/denofevil">Dennis Ushakov</a></li>
+                    <li>jEdit plugin: <a href="http://www.topbug.net/">Hong Xu</a></li>
+                    <li>Micro plugin: <a href="https://github.com/10sr">10sr</a></li>
+                    <li>NetBeans plugin: <a href="http://www.bennyn.de/">Benny Neugebauer</a>, <a href="http://beanbelt.blogspot.de/">Michael Koppen</a>, <a href="http://junichi11.com/">Junichi Yamamoto</a></li>
+                    <li>Notepad++ plugin: <a href="http://www.topbug.net/">Hong Xu</a></li>
+                    <li>Sublime Text plugin: <a href="http://sindresorhus.com/">Sindre Sorhus</a></li>
+                    <li>TextMate plugin: <a href="http://robbrackett.com/">Rob Brackett</a></li>
+                    <li>Vim plugin: <a href="http://www.topbug.net/">Hong Xu</a>, <a href="http://treyhunner.com/">Trey Hunner</a></li>
+                    <li>Visual Studio plugin: <a href="http://www.swansontec.com/">William Swanson</a>, <a href="https://github.com/nulltoken">nulltoken</a>, <a href="http://localghost.io/">Martijn Laarman</a>, <a href="http://kinddragon.blogspot.com/">Arkadiy Shapkin</a>, <a href="http://github.com/jedmao">Jed Mao</a></li>
+                    <li>Visual Studio Code extension: <a href="https://github.com/jedmao">Jed Mao</a>, <a href="https://github.com/chrisdias">Chris Dias</a></li>
+                    <li>Xcode plugin: <a href="http://marcosero.com/">Marco Sero</a></li>
                 </ul> 
             </div>
             
-            <p>EditorConfig logos drawn by <a href="#">Kat On</a> and <a href="#">Amon Keishima</a>. Website by <a href="#">Trey Hunner</a> and <a href="#">Hong Xu</a>. Please attribute appropriately. </p>
+            <p>EditorConfig logos drawn by <a href="http://squirrelmuffins.com/">Kat On</a> and <a href="https://pittankopta.net/">Amon Keishima</a>. Website by <a href="http://treyhunner.com/">Trey Hunner</a> and <a href="http://www.topbug.net/">Hong Xu</a>. Please attribute appropriately. </p>
         </section>
 <!------------------------------------------------------------------------------------>
         <section class="container">
             <table class="table__tamanho">
                 <tr>
                     <td><h1>Project page on GitHub</h1></td>
-                    <td><img src="assets/images/logos/fork-editorconfig.png" alt="Logo"></td>
+                    <td><a href="https://github.com/editorconfig/"><img src="assets/images/logos/fork-editorconfig.png" alt="Logo"></a></td>
                 </tr>
             </table>
             <table class="table__tamanho">
                 <tr>
                     <td><h1>Follow us on Twitter</h1></td>
-                    <td><img src="assets/images/logos/tweet-editorconfig.png" alt="Twitter"> </td>
+                    <td><a href="https://twitter.com/EditorConfig"><img src="assets/images/logos/tweet-editorconfig.png" alt="Twitter"></a></td>
                 </tr>
             </table>
         </section>
@@ -415,11 +409,11 @@
     <footer>
         <div class="footer">
             <p>
-                The EditorConfig website is licensed under a <a href="#">Creative Commons Attribution 3.0 Unported License</a>. 
+                The EditorConfig website is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. 
             </p>
             <div class="footer__images">
-                <img src="assets/images/logos/github.png" alt="Logo GitHub">
-                <img src="assets/images/logos/twitter_circulo.png" alt="Logo Twitter">
+                <a href="https://github.com/editorconfig/"><img src="assets/images/logos/github.png" alt="Logo GitHub"></a>
+                <a href="https://twitter.com/EditorConfig"><img src="assets/images/logos/twitter_circulo.png" alt="Logo Twitter"></a>
             </div>
         </div>
     </footer>
