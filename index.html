@@ -37,11 +37,11 @@
 
             
                 <div class="header__title">
-                    <h1>EditorConfig</h1>
+                    <h1 class="header__titulo">EditorConfig</h1>
+                    <a class="header__seta" href="#whatis"><img  src="assets/images/seta_baixo.png" alt="seta para baixo" > </a>
                 </div>
-            </div>
-                <img src="assets/images/seta_baixo.png" alt="seta para baixo">
-            </div>
+                
+            
         </div>
     </div>
     </header>
@@ -57,14 +57,18 @@
         </section>
 <!------------------------------------------------------------------------------------>
         <section id="example" class="container">
-            <h1>
+            <h1>What's an EditorConfig file look like?</h1>
+            <p class="main__texto">(A <a href="https://editorconfig-specification.readthedocs.io/en/latest/">formal specification of EditorConfig</a>  is also available.)</p>
+
+
+            <h2>
                 Example File
-            </h1>
+            </h2>
             <p class="main__texto">
                 Below is an example .editorconfig file setting end-of-line and indentation styles for Python and JavaScript files.
             </p >
             
-            <table>
+            <table class="main__table">
                 <tr>
                     <td>
                         <p class="table__fosco">
@@ -127,7 +131,7 @@
                 </tr>
             </table>
             <p class="main__texto">
-                Check the Wiki for some real-world examples of <a href="#">projects using EditorConfig files</a>.
+                Check the Wiki for some real-world examples of <a href="https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig">projects using EditorConfig files</a>.
             </p>
         </section>
 <!------------------------------------------------------------------------------------>
@@ -150,12 +154,12 @@
         <section id="fileformation" class="container">
             <h1>File Format Details</h1>
             <p class="main__texto">
-                EditorConfig files use an INI format that is compatible with the format used by <a href="#">Python ConfigParser Library</a>, but [ and ] are allowed in the section names. The section names are filepath <a href="#">globs</a> (case sensitive), similar to the format accepted by <a href="#">gitignore</a>. Only forward slashes (/, not backslashes) are used as path separators and octothorpes (#) or semicolons (;) are used for comments. Comments should go on their own lines. EditorConfig files should be UTF-8 encoded, with either CRLF or LF line separators. EditorConfig files are read top to bottom and the most recent rules found take precedence.
+                EditorConfig files use an INI format that is compatible with the format used by <a href="https://docs.python.org/2/library/configparser.html">Python ConfigParser Library</a>, but [ and ] are allowed in the section names. The section names are filepath <a href="https://en.wikipedia.org/wiki/Glob_(programming)">globs</a> (case sensitive), similar to the format accepted by <a href="https://git-scm.com/docs/gitignore#_pattern_format">gitignore</a>. Only forward slashes (/, not backslashes) are used as path separators and octothorpes (#) or semicolons (;) are used for comments. Comments should go on their own lines. EditorConfig files should be UTF-8 encoded, with either CRLF or LF line separators. EditorConfig files are read top to bottom and the most recent rules found take precedence.
             </p>
             <p class="main__texto">Filepath glob patterns and currently-supported EditorConfig properties are explained below.</p>
             <h2 class="main__ligth">Wildcard Patterns</h2>
             <p class="main__texto">Special characters recognized in section names for wildcard matching:</p>
-            <table >
+            <table class="main__table">
                 <tr>
                     <td>*</td>
                     <td>Matches any string of characters, except path separators (/)</td>
@@ -188,10 +192,10 @@
 
             <p class="main__texto">Special characters can be escaped with a backslash so they won't be interpreted as wildcard patterns.</p>
             <h2 class="main__ligth">Supported Properties</h2>
-            <p class="main__texto">Note that not all properties are supported by every plugin. The wiki has a <a href="#">complete list of properties</a>.</p>
+            <p class="main__texto">Note that not all properties are supported by every plugin. The wiki has a <a href="https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties">complete list of properties</a>.</p>
 
 
-            <table>
+            <table class="main__table">
                 <tr>
                     <td><b>indent_style:</b> set to "tab" or "space" to use hard tabs or soft tabs respectively.</td>
                 </tr>
@@ -241,6 +245,9 @@
                 <a href="https://github.com/elementary/code#readme">
                     <img src="assets/images/logos/no-plugin/elementary-code.png" alt="ElementaryCode"></a>
 
+
+
+
                 <a href="https://wiki.gnome.org/Apps/Builder/Features#EditorConfig">
                     <img src="assets/images/logos/no-plugin/builder.png" alt="Builder"></a>
                 <a href="https://github.com/RReverser/github-editorconfig#readme">
@@ -250,43 +257,71 @@
                 <a href="https://gogs.io/">
                     <img src="assets/images/logos/no-plugin/gogs.png" alt="Gogs"></a>
                 
-                <a href="">
+
+
+
+                <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
                     <img src="assets/images/logos/no-plugin/intellijIDEA.png" alt="IntellijIDEA">
                 </a>
-                <a href="">
+                <a href="https://api.kde.org/frameworks/ktexteditor/html/">
                     <img src="assets/images/logos/no-plugin/ktexteditor.png" alt="KTextEditor">
                 </a>
-                <a href="">
+                <a href="https://www.activestate.com/blog/editorconfig-your-komodo/">
                     <img src="assets/images/logos/no-plugin/komodo.png" alt="komodo">
                 </a>
-                <a href="">
+                <a href="http://kakoune.org/">
                     <img src="assets/images/logos/no-plugin/kakoune.png" alt="kakoune">
                 </a>
 
-               <a href=""></a>
-               <a href=""></a>
-               <a href=""></a>
-               <a href=""></a>
-                <img src="assets/images/logos/no-plugin/monodevelop.png" alt="VisualStudio/MonoDevelop">
-                <img src="assets/images/logos/no-plugin/pyCharm.png" alt="PyCharm">
-                <img src="assets/images/logos/no-plugin/reSharper.png" alt="ReSharper">
-                <img src="assets/images/logos/no-plugin/rider.png" alt="Rider">
+
+
+
+               <a href="https://github.com/mikerochip/editorconfig-monodevelop#readme">
+                   <img src="assets/images/logos/no-plugin/monodevelop.png" alt="VisualStudio/MonoDevelop">
+                </a>
+               <a href="https://plugins.jetbrains.com/plugin/7294-editorconfig">
+                    <img src="assets/images/logos/no-plugin/pyCharm.png" alt="PyCharm">
+               </a>
+               <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
+                    <img src="assets/images/logos/no-plugin/reSharper.png" alt="ReSharper">
+               </a>
+               <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
+                    <img src="assets/images/logos/no-plugin/rider.png" alt="Rider">
+               </a>
                 
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <img src="assets/images/logos/no-plugin/rubyMine.png" alt="RubyMine">
-                <img src="assets/images/logos/no-plugin/sourcehut.png" alt="SourceHut">
-                <img src="assets/images/logos/no-plugin/sourcelair.png" alt="SourceLair">
-                <img src="assets/images/logos/no-plugin/TortoiseGit.png" alt="TortoiseGit">
                 
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <img src="assets/images/logos/no-plugin/visualstudio-pro.png" alt="VisualStudio">
-                <img src="assets/images/logos/no-plugin/webStorm.png" alt="WebStorm">
-                <img src="assets/images/logos/no-plugin/working-copy.png" alt="WorkingCopy">
+                
+                
+                
+                <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
+                    <img src="assets/images/logos/no-plugin/rubyMine.png" alt="RubyMine">
+                </a>
+                <a href="https://sourcehut.org/">
+                    <img src="assets/images/logos/no-plugin/sourcehut.png" alt="SourceHut">
+                </a>
+                <a href="https://www.sourcelair.com/features/editorconfig">
+                    <img src="assets/images/logos/no-plugin/sourcelair.png" alt="SourceLair">
+                </a>
+                <a href="https://tortoisegit.org/">
+                    <img src="assets/images/logos/no-plugin/TortoiseGit.png" alt="TortoiseGit">
+                </a>
+                
+                
+                
+                
+                
+                <a href="https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.0#coding-convention-support-through-editorconfig">
+                    <img src="assets/images/logos/no-plugin/visualstudio-pro.png" alt="VisualStudio">
+                </a>
+                <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
+                    <img src="assets/images/logos/no-plugin/webStorm.png" alt="WebStorm">
+                </a>
+                <a href="https://workingcopy.app/">
+                    <img src="assets/images/logos/no-plugin/working-copy.png" alt="WorkingCopy">
+                </a>
+                
+                
+                
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
@@ -295,36 +330,96 @@
             <h2>Editor</h2>
 
             <div class="logos">
-                <img src="assets/images/logos/download-plugin/appCode.png" alt="AppCode">
-                <img src="assets/images/logos/download-plugin/atom.png" alt="Atom">
-                <img src="assets/images/logos/download-plugin/brackets.png" alt="Brackets">
-                <img src="assets/images/logos/download-plugin/clion.png" alt="CLion">
-                <img src="assets/images/logos/download-plugin/coda.png" alt="Coda">
-                <img src="assets/images/logos/download-plugin/codeblocks.png" alt="Code::Blocks">
-                <img src="assets/images/logos/download-plugin/eclipse.png" alt="Eclipse">
-                <img src="assets/images/logos/download-plugin/emacs.png" alt="Emacs">
-                <img src="assets/images/logos/download-plugin/geany.png" alt="Geany">
-                <img src="assets/images/logos/download-plugin/gedit.png" alt="GEdit">
-                <img src="assets/images/logos/download-plugin/jedit.png" alt="JEdit">
-                <img src="assets/images/logos/download-plugin/lazarus.png" alt="Lazarus">
-                <img src="assets/images/logos/download-plugin/micro.png" alt="Micro">
-                <img src="assets/images/logos/download-plugin/NetBeans.png" alt="NetBeans">
-                <img src="assets/images/logos/download-plugin/notepad.png" alt="Notepad++">
-                <img src="assets/images/logos/download-plugin/phpStorm.png" alt="PhpStorm">
-                <img src="assets/images/logos/download-plugin/sublimetext.png" alt="SublimeText">
-                <img src="assets/images/logos/download-plugin/textadept.png" alt="textAdept">
-                <img src="assets/images/logos/download-plugin/textmate.png" alt="TextMate">
-                <img src="assets/images/logos/download-plugin/vim.png" alt="Vim">
-                <img src="assets/images/logos/download-plugin/visualstudio-code.png" alt="VisualStudioCode">
+                <a href="https://plugins.jetbrains.com/plugin/7294-editorconfig">
+                    <img src="assets/images/logos/download-plugin/appCode.png" alt="AppCode">
+                </a>
+                <a href="https://github.com/sindresorhus/atom-editorconfig#readme">
+                    <img src="assets/images/logos/download-plugin/atom.png" alt="Atom">
+                </a>
+                <a href="https://github.com/kidwm/brackets-editorconfig/">
+                    <img src="assets/images/logos/download-plugin/brackets.png" alt="Brackets">
+                </a>
+                <a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/editorconfig">
+                    <img src="assets/images/logos/download-plugin/clion.png" alt="CLion">
+                </a>
+
+
+                <a href="https://panic.com/coda/plugins.php#Plugins">
+                    <img src="assets/images/logos/download-plugin/coda.png" alt="Coda">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-codeblocks#readme">
+                    <img src="assets/images/logos/download-plugin/codeblocks.png" alt="Code::Blocks">
+                </a>
+                <a href="https://github.com/ncjones/editorconfig-eclipse#readme">
+                    <img src="assets/images/logos/download-plugin/eclipse.png" alt="Eclipse">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-emacs#readme">
+                    <img src="assets/images/logos/download-plugin/emacs.png" alt="Emacs">
+                </a>
+
+
+                <a href="https://github.com/editorconfig/editorconfig-geany#readme">
+                    <img src="assets/images/logos/download-plugin/geany.png" alt="Geany">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-gedit#readme">
+                    <img src="assets/images/logos/download-plugin/gedit.png" alt="GEdit">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-jedit#readme">
+                    <img src="assets/images/logos/download-plugin/jedit.png" alt="JEdit">
+                </a>
+                <a href="https://github.com/skalogryz/editorConfig/tree/master/lazideext">
+                    <img src="assets/images/logos/download-plugin/lazarus.png" alt="Lazarus">
+                </a>
+
+
+                <a href="https://github.com/10sr/editorconfig-micro#readme">
+                    <img src="assets/images/logos/download-plugin/micro.png" alt="Micro">
+                </a>
+                <a href="https://github.com/welovecoding/editorconfig-netbeans#readme">
+                    <img src="assets/images/logos/download-plugin/NetBeans.png" alt="NetBeans">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-notepad-plus-plus#readme">
+                    <img src="assets/images/logos/download-plugin/notepad.png" alt="Notepad++">
+                </a>
+                <a href="https://plugins.jetbrains.com/plugin/7294-editorconfig">
+                    <img src="assets/images/logos/download-plugin/phpStorm.png" alt="PhpStorm">
+                </a>
+
+
+
+                <a href="https://github.com/sindresorhus/editorconfig-sublime#readme">
+                    <img src="assets/images/logos/download-plugin/sublimetext.png" alt="SublimeText">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-textadept#readme">
+                    <img src="assets/images/logos/download-plugin/textadept.png" alt="textAdept">
+                </a>
+                <a href="https://github.com/Mr0grog/editorconfig-textmate#readme">
+                    <img src="assets/images/logos/download-plugin/textmate.png" alt="TextMate">
+                </a>
+                <a href="https://github.com/editorconfig/editorconfig-vim#readme">
+                    <img src="assets/images/logos/download-plugin/vim.png" alt="Vim">
+                </a>
+
+
+                <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">
+                    <img src="assets/images/logos/download-plugin/visualstudio-code.png" alt="VisualStudioCode">
+                </a>               
             </div>
 
             <h2>Headless Tool</h2>
             <p>To use EditorConfig with one of these headless tools, you will need to install a plugin.</p>
 
             <div class="logos">
-                <img src="assets/images/logos/headless-tool/apache-ant.png" alt="ApacheAnt">
-                <img src="assets/images/logos/headless-tool/gradle.png" alt="Gradle">
-                <img src="assets/images/logos/headless-tool/maven.png" alt="maven">
+                <a href="https://github.com/ec4j/editorconfig-ant-tasks">
+                    <img src="assets/images/logos/headless-tool/apache-ant.png" alt="ApacheAnt">
+                </a>
+                <a href="https://github.com/ec4j/editorconfig-gradle-plugin">
+                    <img src="assets/images/logos/headless-tool/gradle.png" alt="Gradle">
+                </a>
+                <a href="https://ec4j.github.io/editorconfig-maven-plugin/">
+                    <img src="assets/images/logos/headless-tool/maven.png" alt="maven">
+                </a>
+     
             </div>
         </section>
 <!------------------------------------------------------------------------------------>

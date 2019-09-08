@@ -20,20 +20,25 @@
 
 .header__title{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 290px;
     height: calc(100vh - 50px);
     font-size: 50px;
     color: white;
+    
 }
+.header__title>h1{
+    padding: 200px;
+}
+
 
 @media (max-width: 1500px){
     .header__title{
         padding: 0 70px;
     }
+    
  
 }
 
@@ -41,6 +46,7 @@
     .header__title{
         font-size: 40px;
     }
+    
  
 }
 
@@ -48,6 +54,9 @@
     .header__title{
     justify-content: center;
     font-size: 25px;
+    }
+    .header__title>h1{
+        padding: 190px;
     }
 }
 .header__menuM{
@@ -106,18 +115,32 @@
 
 }
 
+
 .logos img{
     width: 15%;
     height: 15%;
     max-width: 100%;
     max-height: 100%;
+    
+}
+@media(max-width:600px){
+    .logos img{
+        width: 100px;
+        height: 100px;
+        
+        
+        
+    }
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+
+    }   
 }
 
 
-.header__titulo{
-    font-size: 27px;
-    color: #FFFFFF;
-}
+
+
 /*-----------------------------------------------*/
 @media(max-width:600px){
     .container{
@@ -146,6 +169,11 @@
     padding-bottom: 15px;
 }
 /* trabalhando com as tabelas */
+
+.main__table{
+    width: 100%;
+}
+
 
 table{
     border-left: 7px #247B7B solid;
@@ -180,6 +208,7 @@ table tr :nth-child(even){
 */
 .table__tamanho{
     width: 90%;
+    
 }
 .table__tamanho h1{
     font-size: 20px;
@@ -193,6 +222,7 @@ table img{
         width: 40%;
     }
     table img{
+        
         width: 30%;
         height: 30%;
         max-width: 100%;
