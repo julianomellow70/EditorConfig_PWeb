@@ -15,6 +15,12 @@
     }
 }
 
+@media (min-width: 600px){
+    .container{
+        width: 90%;
+    }
+}
+
 html{
     scroll-behavior: smooth; 
 }
@@ -39,7 +45,6 @@ html{
     color: white;
     padding-right: 100px;
 }
-
 
 .header__seta{
     align-self: center;
@@ -70,23 +75,18 @@ html{
     .header__title{
         padding: 0 70px;
     }
-    
- 
 }
 
 @media (max-width: 900px){
     .header__title{
         font-size: 40px;
     }
-    
- 
 }
 
 @media(max-width:600px){
     .header__title{
-    justify-content: center;
-    font-size: 25px;
-   
+        justify-content: center;
+        font-size: 25px;
     }
     .header__title>h1{
        
@@ -97,19 +97,16 @@ html{
     display: flex;
     height: 45px;
     justify-content: space-between;
-   
 }
 
 .header__menuM>img{
     width: 42px;
-    
 }
 
 .header__menuD{
     background-color: rgba(14, 59, 67, 0.5);
     display: flex;
     align-items: center;
- 
 }
 
 .header__menuD ul>div{
@@ -125,9 +122,7 @@ html{
     margin: 0px;
 }
 .header__lista-menu:hover{
-   
     background-color: rgba(14, 59, 67);
-    
 }
 .header__lista-menu:last-child{
     padding-right: 0;
@@ -136,9 +131,9 @@ html{
 .header__lista-menu>a{
     text-decoration: none;
     color: white;
-   font-weight: 800px;
-   display: inline-block;
-   white-space: nowrap;
+    font-weight: 800px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .header__lista{
@@ -146,6 +141,22 @@ html{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    /* background-color: red; */
+}
+.header__lista-Mobile{
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+    }
+    .header__lista-Mobile img{
+        opacity: 0;
+    }
+    .header__menuD-ativar{
+        display: flex;
+    }
+
+@media(max-width: 600px){
+    
 }
 
 @media(min-width:600px){
@@ -161,7 +172,9 @@ html{
     .header__menuD{
         display: none;
     }
-
+    .header__menuM{
+        
+    }
 }
 
 .logos img{
@@ -229,12 +242,11 @@ a{
 
 table{
     border-left: 7px #247B7B solid;
-   border-collapse: collapse;
-   margin-bottom: 15px;
-    
+    border-collapse: collapse;
+    margin-bottom: 15px;
 }
+
 table td {
-  
     text-align: left;
     line-height: 2.0;
     padding-top: 10px;
@@ -244,7 +256,6 @@ table td {
 .tabela__titulo{
     font-size: 16px;
     font-weight: normal;
-    
 }
 
 table p {
@@ -258,10 +269,11 @@ table tr :nth-child(even){
 
 }
 */
-/* .table__tamanho{
-    width: 90%;
+.table__tamanho{
+    
     
 }
+/* 
 .table__tamanho h1{
     font-size: 20px;
 }
@@ -279,15 +291,17 @@ table img{
         height: 30%;
         max-width: 100%;
         max-height: 100%;
-    }  
-} */
+    } */ 
+} 
 
 .tabelas__redes-sociais{
-display: flex;
-flex-direction: column;
+    width: 90%;
+}
+.tabelas__redes-sociais img{
+    height: 20%;
 }
 .tabelas__img{
-    height: ;
+    height: 50%;
 }
 
 @media (min-width:600px){
@@ -310,9 +324,52 @@ flex-direction: column;
     } 
 }
 
-
-
-
+.tabela__redes-sociais{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px black solid; */
+    /* background-color: red; */
+}
+.tabela__redes-sociais div{
+    display: inline-flex;
+    width: 90%;
+    height: 150px;
+    border-left: 7px #247B7B solid;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color:  #C4C4C4;
+    /* background-color: green; */
+}
+.tabela__redes-sociais div h1{
+    /* background-color: pink; */
+    text-align: center;
+    margin: auto 0;
+}
+.tabela__redes-sociais div img{
+    max-width: 100%;
+    max-height: 100%;
+    /* background-color: yellow; */
+    width: 90%;
+    height: 90%;
+}
+@media(min-width:600px){
+    .tabela__redes-sociais{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tabela__redes-sociais div{
+        min-width: 300px;
+        min-height: 150px;
+        margin-bottom: 100px;
+        margin-right: 10px;
+    }
+    .tabela__redes-sociais div img{
+        width: 150px;
+        height: 150px;
+        padding: 25px;
+    } 
+}
 
 table tr:nth-child(even){
     background-color:  #C4C4C4;
