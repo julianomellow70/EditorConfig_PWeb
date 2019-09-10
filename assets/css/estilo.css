@@ -88,9 +88,6 @@ html{
         justify-content: center;
         font-size: 25px;
     }
-    .header__title>h1{
-       
-    }
 }
 .header__menuM{
     background-color: rgba(14, 59, 67, 0.5);
@@ -155,25 +152,17 @@ html{
         display: flex;
     }
 
-@media(max-width: 600px){
-    
-}
-
 @media(min-width:600px){
     .header__menuM{
         display: none;
     }
-
     .header__menuD>ul>div{
-       padding: 7px;
+        padding: 7px;
     }
 }
 @media(max-width:600px){
     .header__menuD{
         display: none;
-    }
-    .header__menuM{
-        
     }
 }
 
@@ -182,13 +171,12 @@ html{
     height: 15%;
     max-width: 100%;
     max-height: 100%;
-    
 }
+
 @media(max-width:600px){
     .logos img{
         width: 100px;
         height: 100px;
- 
     }
     .logos{
         display: flex;
@@ -197,7 +185,6 @@ html{
 }
 
 .logos{
-    
     justify-content:center;
 }
 .logos__headless-Tool{
@@ -207,12 +194,16 @@ html{
 /*-----------------------------------------------*/
 
 h2{
-text-align: center;
+    text-align: center;
 }
 
 a{
     color: #247B7B;
     text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color: #247B7B;
 }
 
 .main>section>h1{
@@ -261,39 +252,6 @@ table td {
 table p {
 padding: 10px;
 }
-/*table tr :nth-child(odd){
-    background-color: #DFDADA;
-}
-table tr :nth-child(even){
-  background-color:  #C4C4C4;
-
-}
-*/
-.table__tamanho{
-    
-    
-}
-/* 
-.table__tamanho h1{
-    font-size: 20px;
-}
-table img{
-    max-width: 100%;
-    max-height: 100%;
-} */
-@media(min-width:600px){
-    /* .table__tamanho{
-        width: 40%;
-    }
-    table img{
-        
-        width: 30%;
-        height: 30%;
-        max-width: 100%;
-        max-height: 100%;
-    } */ 
-} 
-
 .tabelas__redes-sociais{
     width: 90%;
 }
@@ -332,7 +290,7 @@ table img{
 }
 .tabela__redes-sociais div{
     display: inline-flex;
-    width: 90%;
+    width: 80%;
     height: 150px;
     border-left: 7px #247B7B solid;
     border-collapse: collapse;
@@ -343,7 +301,7 @@ table img{
 .tabela__redes-sociais div h1{
     /* background-color: pink; */
     text-align: center;
-    margin: auto 0;
+    margin: auto 20px;
 }
 .tabela__redes-sociais div img{
     max-width: 100%;
@@ -383,12 +341,6 @@ table tr:nth-child(even){
       color: #247B7B;
       padding-left: 10px;
   }
-
-
-  .lista__imagens li{
-    
-  }
-
   .lista ul{
       padding-left: 25px;
   }
@@ -400,7 +352,6 @@ footer{
 .footer{
     display: flex;
     justify-content: space-around;
-    
 }
 
 footer p{
@@ -419,10 +370,6 @@ footer p a{
     display: inline-block;
 }
 
-footer img{
-    /*width: 40%;*/
-}
-
 @media(min-width:600px){
     footer img{
         padding-right: 20px;
@@ -430,5 +377,12 @@ footer img{
 }
 
 section{
-    padding-top: 100px;
+    padding: 20px 0;
+}
+section h2{
+    padding: 20px 0;
+}
+section p{
+    padding: 10px 0;
+    text-align: justify;
 }
