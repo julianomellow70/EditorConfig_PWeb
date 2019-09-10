@@ -17,10 +17,13 @@
             </div>
 
             <!--menu-->
-            <nav class="header__menuD">
-                <ul class="header__lista container"> 
-                    <div><img src="assets/images/logos/logo_maior.png" alt="logo" width="45px" height="45px"></div>
+            <div class="header__menuD">
+            <nav class=" header__lista container">
+                    <div><img src="assets/images/logos/logo_maior.png" alt="logo" width="45px" height="45px">  
+                    </div>
                     <div>
+                <ul class="header__lista container"> 
+                        
                         <li class = "header__lista-menu"><a href="#whatis">What is?</a></li>
                         <li class = "header__lista-menu"><a href="#example">Example</a></li>
                         <li class = "header__lista-menu"><a href="#filelocation">File Location</a></li>
@@ -31,6 +34,7 @@
                 </ul>
 
             </nav>
+        </div>
             <div class="header__title">
                 <h1 class="header__titulo">EditorConfig</h1>
                 <a class="header__seta" href="#whatis"><img  src="assets/images/seta.svg" alt="seta para baixo" > </a>
@@ -397,21 +401,22 @@
                     <img src="assets/images/logos/download-plugin/visualstudio-code.png" alt="VisualStudioCode">
                 </a>               
             </div>
-
-            <h2>Headless Tool</h2>
-            <p>To use EditorConfig with one of these headless tools, you will need to install a plugin.</p>
-
-            <div class="logos">
-                <a href="https://github.com/ec4j/editorconfig-ant-tasks">
-                    <img src="assets/images/logos/headless-tool/apache-ant.png" alt="ApacheAnt">
-                </a>
-                <a href="https://github.com/ec4j/editorconfig-gradle-plugin">
-                    <img src="assets/images/logos/headless-tool/gradle.png" alt="Gradle">
-                </a>
-                <a href="https://ec4j.github.io/editorconfig-maven-plugin/">
-                    <img src="assets/images/logos/headless-tool/maven.png" alt="maven">
-                </a>
-     
+            <div>
+                <h2>Headless Tool</h2>
+                <p>To use EditorConfig with one of these headless tools, you will need to install a plugin.</p>
+    
+                <div class="logos">
+                    <a href="https://github.com/ec4j/editorconfig-ant-tasks">
+                        <img src="assets/images/logos/headless-tool/apache-ant.png" alt="ApacheAnt">
+                    </a>
+                    <a href="https://github.com/ec4j/editorconfig-gradle-plugin">
+                        <img src="assets/images/logos/headless-tool/gradle.png" alt="Gradle">
+                    </a>
+                    <a href="https://ec4j.github.io/editorconfig-maven-plugin/">
+                        <img src="assets/images/logos/headless-tool/maven.png" alt="maven">
+                    </a>
+    
+            </div>
             </div>
         </section>
 <!------------------------------------------------------------------------------------>
@@ -477,18 +482,26 @@
         </section>
 <!------------------------------------------------------------------------------------>
         <section class="container">
-            <table class="table__tamanho">
-                <tr>
-                    <td><h1>Project page on GitHub</h1></td>
-                    <td><a href="https://github.com/editorconfig/"><img src="assets/images/logos/fork-editorconfig.png" alt="Logo"></a></td>
-                </tr>
-            </table>
-            <table class="table__tamanho">
-                <tr>
-                    <td><h1>Follow us on Twitter</h1></td>
-                    <td><a href="https://twitter.com/EditorConfig"><img src="assets/images/logos/tweet-editorconfig.png" alt="Twitter"></a></td>
-                </tr>
-            </table>
+            <div class = "tabelas__redes-sociais">
+               
+                   <table class="table__tamanho">
+                     <div style="padding: 55px;">
+                         <tr>
+                             <td><h1>Project page on GitHub</h1></td>
+                             <td><a href="https://github.com/editorconfig/"><img class = "tabelas__img" src="assets/images/logos/fork-editorconfig.png" alt="Logo"></a></td>
+                         </tr>
+                     </table>
+               
+              
+                   <table class="table__tamanho">
+                       <tr>
+                           <td><h1>Follow us on Twitter</h1></td>
+                           <td><a href="https://twitter.com/EditorConfig"><img class = "tabelas__img" src="assets/images/logos/tweet-editorconfig.png" alt="Twitter"></a></td>
+                       </tr>
+                   </div>
+                 </table>
+              
+            </div>
         </section>
 <!------------------------------------------------------------------------------------>
     </main>
@@ -498,10 +511,7 @@
             <p>
                 The EditorConfig website is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. 
             </p>
-            <div class="footer__images">
-                <a href="https://github.com/editorconfig/"><img src="assets/images/logos/github.png" alt="Logo GitHub"></a>
-                <a href="https://twitter.com/EditorConfig"><img src="assets/images/logos/twitter_circulo.png" alt="Logo Twitter"></a>
-            </div>
+            
         </div>
     </footer>
 </body>
