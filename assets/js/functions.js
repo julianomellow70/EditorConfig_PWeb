@@ -1,12 +1,18 @@
-function addMenu(){
-    document.getElementById("menu").classList.remove('header__lista');
-    document.getElementById("menu").classList.add('header__lista-Mobile');
-    document.getElementById("menu").classList.remove('header__menuD');
-    document.getElementById("menu").classList.add('header__menuD-ativar');
+const menu = document.querySelector('.menu')
+
+let menuAberto = false
+
+function mostrarMenu() {
+    if(menuAberto) {
+        menu.style.height = '60px'
+        menuAberto = false
+    } else {
+        menu.style.height = '350px'
+        menuAberto = true
+    }
 }
 
-document.querySelector("#btn-menu").addEventListener("click", (event) =>{
-    event.preventDefault();
-
-    addMenu();
-});
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 768)
+        menu.style = ''
+})
