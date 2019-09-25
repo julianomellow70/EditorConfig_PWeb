@@ -9,14 +9,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-
-
-@media (min-width: 768px) {
-    .container {
-        width: 90%;
-    }
+    width: 90%;
 }
 
 html {
@@ -86,7 +79,7 @@ html {
 
 /*header --------------------------------------------*/
 .header {
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -103,7 +96,7 @@ html {
     height: calc(100vh - 50px);
     font-size: 80px;
     color: white;
-    padding-right: 100px;
+    /* padding-right: 10%; */
 }
 
 .header__seta {
