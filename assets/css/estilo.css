@@ -232,12 +232,10 @@ table p {
 }
 
 .tabelas__redes-sociais img {
-    height: 20%;
-}
+   min-width: 100%;
+} 
 
-.tabelas__img {
-    height: 50%;
-}
+
 
 @media (min-width:600px) {
     .tabelas__redes-sociais {
@@ -253,11 +251,7 @@ table p {
         margin-right: 10px;
     }
 
-    .tabelas__img {
-        width: 150px;
-        height: 150px;
-        padding: 25px;
-    }
+   
 }
 
 .tabela__redes-sociais {
@@ -267,7 +261,7 @@ table p {
     /* background-color: red; */
 }
 
-.tabela__redes-sociais div {
+.tabela__redes-sociais-div {
     display: inline-flex;
     width: 80%;
     height: 150px;
@@ -284,12 +278,32 @@ table p {
     margin: auto 20px;
 }
 
-.tabela__redes-sociais div img {
-    max-width: 100%;
-    max-height: 100%;
-    /* background-color: yellow; */
-    width: 90%;
-    height: 90%;
+
+
+.tabela__redes-sociais-img a img{
+    object-fit: contain;
+    width: 30%;
+    height: auto;
+
+}
+.tabela__redes-sociais-img-twitter{
+    width: 45% !important;
+    padding-top:2%;
+  }
+
+@media (max-width:600px){
+    .tabela__redes-sociais-img a img{
+        width: 70%;
+    }
+
+    .tabela__redes-sociais-img-rato{
+      padding-top: 20%; 
+    }
+    .tabela__redes-sociais-img-twitter{
+        width: 70% !important;
+        padding-top:10%;
+      }
+    
 }
 
 @media(min-width:600px) {
@@ -306,11 +320,7 @@ table p {
         margin-right: 10px;
     }
 
-    .tabela__redes-sociais div img {
-        width: 150px;
-        height: 150px;
-        padding: 25px;
-    }
+    
 }
 
 table tr:nth-child(even) {
